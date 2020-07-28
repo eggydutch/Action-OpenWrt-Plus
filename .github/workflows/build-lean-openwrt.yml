@@ -16,7 +16,7 @@ on:
     branches:
       - master
     paths:
-      - 'config/lean/*.config'
+      - 'config/lean/x86_64-lean-openwrt.config'
 #  schedule:
 #    - cron: 0 8 * * 5
   watch:
@@ -25,7 +25,7 @@ on:
 env:
   REPO_URL: https://github.com/coolsnowwolf/lede
   REPO_BRANCH: master
-  CONFIG_FILE: config/lean/*.config
+  CONFIG_FILE: config/lean/x86_64-lean-openwrt.config
   DIY_SH: scripts/lean-openwrt.sh
   FEEDS_CONF: feeds.conf.default
   SSH_ACTIONS: false
