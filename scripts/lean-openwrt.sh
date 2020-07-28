@@ -8,15 +8,6 @@
 # Modify default IP
 sed -i 's/192.168.1.1/192.168.1.8/g' package/base-files/files/bin/config_generate
 
-# Add luci-app-ssr-plus
-pushd package/lean
-git clone --depth=1 https://github.com/fw876/helloworld
-
-# Add Project OpenWrt's autocore
-rm -rf autocore
-svn co https://github.com/project-openwrt/openwrt/branches/18.06-kernel5.4/package/lean/autocore
-popd
-
 # Clone community packages to package/community
 mkdir package/community
 pushd package/community
