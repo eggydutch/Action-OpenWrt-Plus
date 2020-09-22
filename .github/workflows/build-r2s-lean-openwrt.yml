@@ -17,8 +17,8 @@ on:
       - main
     paths:
       - 'config/lean/r2s-lean-openwrt.config'
-  schedule:
-    - cron: 0 08 * * *
+  #schedule:
+  #  - cron: 0 16 * * *
   watch:
 #    types: started
 
